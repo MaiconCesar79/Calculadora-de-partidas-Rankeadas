@@ -7,14 +7,14 @@ let derrotas = 0;
 let laco = 0;
 let nivel = "";
 let saldo = 0;
-
+let decisao = "";
 do{
     vitorias = prompt("Informe o numero de vitoria: ");
     derrotas = prompt("Informe o numero de derrotas: ");
     saldo = SaldoVitorias(vitorias,derrotas);
     nivel = verificadorRank(saldo);
     console.log("O Herói tem de saldo de vitórias " + saldo + " e está no nível de " + nivel);
-    let decisao = prompt("Deseja recalcular seu rank?\nDigite s para recalcular e n para encerrar o programa: ");
+    decisao = prompt("Deseja recalcular seu rank?\nDigite s para recalcular e n para encerrar o programa: ");
     switch(decisao){
         case "s":
             break;
